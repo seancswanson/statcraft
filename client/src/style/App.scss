@@ -4,8 +4,6 @@
 }
 
  html {
-	 width: 100vw;
-	 height: 100vh;
 	 background: black;
     box-sizing: border-box;
 
@@ -29,9 +27,9 @@
 }
 
 body {
-	width: 100%;
-	height: 100vh;
-	background: url(../assets/images/statcraftbg2.png) repeat;
+	width: 100vw;
+	min-height: 100vh;
+	background: url(../assets/images/statcraftbg3.png);
 	background-size: contain;
 }
 

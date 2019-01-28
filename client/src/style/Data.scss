@@ -2,25 +2,69 @@
 }
 
 .data-wrapper {
-    display: flex;
     color: white;
     background: rgba(0, 0, 0, 0.8);
     border: 3px solid rgba(0, 0, 0, 0.9);
     padding: 2em;
-    margin-top: 1em;
     justify-content: space-between;
-
+    align-items: center;
     p {
         flex-basis: 50%;
         flex: 1;
     }
+}
 
-    &.brick-1 {
-        .VictoryContainer {
-            flex-basis: 250px !important;
-        }
+.brick  {
+    margin-top: 1em;
+
+    h2 {
+        font-size: 18px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.8);
+        border: 3px solid black;
+        margin: 0;
     }
 }
+
+#brick-1 {
+    h2 {
+        text-align: left;
+    }
+
+    .VictoryContainer {
+        min-width: 220px !important;
+        width: 25vw !important;
+        max-width: 350px !important;
+        margin: 0 auto;
+    }
+}
+
+#brick-2 {
+    h2 {
+        text-align: right;
+    }
+
+    .VictoryContainer {
+        min-width: 220px !important;
+        width: 25vw !important;
+        max-width: 350px !important;
+        margin: 0 auto;
+    }
+}
+
+#brick-3 {
+    h2 {
+        text-align: left;
+    }
+
+    .VictoryContainer {
+        min-width: 220px !important;
+        width: 25vw !important;
+        max-width: 350px !important;
+        margin: 0 auto;
+    }
+}
+
 
 .VictoryContainer {
     margin: 0;

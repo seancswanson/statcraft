@@ -13,24 +13,27 @@
     }
 
     .thick {
-        height: 10px;
+        height: 6px;
         min-width: 235px;
         width: 75%;
         background: white;
         text-align: left;
         padding: 0;
-        margin: 0;
+        margin: 15px 0 10px 0;
         position: relative;
         top: -10px;
     }
 
-    .start-button {
-        border: none;
-        margin: 0;
-        padding: 5px 10px;
-        font-family: inherit;
-        background: black;
-        color: inherit;
-        border: 2px solid white;
+    p {
+        text-align: center;
+    }
+
+    .signature {
+        text-align: right;
+        float: right;
+        
+        .signature-name {
+            display: block;
+        }
     }
 }
