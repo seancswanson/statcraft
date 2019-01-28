@@ -1,0 +1,36 @@
+.Intro {
+
+}
+
+.intro-container {
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(0, 0, 0, 0.9);
+    padding: 1.5em 2em;
+    color: white;
+    
+    h1 {
+        text-shadow: 1px 1px 1px gray;
+    }
+
+    .thick {
+        height: 10px;
+        min-width: 235px;
+        width: 75%;
+        background: white;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: -10px;
+    }
+
+    .start-button {
+        border: none;
+        margin: 0;
+        padding: 5px 10px;
+        font-family: inherit;
+        background: black;
+        color: inherit;
+        border: 2px solid white;
+    }
+}

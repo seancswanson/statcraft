@@ -1,0 +1,114 @@
+*, *:before, *:after {
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+  box-sizing: inherit;
+}
+
+ html {
+	 width: 100vw;
+	 height: 100vh;
+	 background: black;
+    box-sizing: border-box;
+
+ /* Force vertical scrollbar so that page does not 'jump' when it appears 
+    http://css-tricks.com/snippets/css/force-vertical-scrollbar/
+ */
+ 	overflow-y: scroll;
+
+ /* Hyphens, 
+    but see also http://blog.kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/ 
+ */
+	-webkit-hyphens: auto;
+     -moz-hyphens: auto;
+	    -ms-hyphens: auto;
+	     -o-hyphens: auto;
+	        hyphens: auto;
+
+	/* http://necolas.github.com/normalize.css/2.0.1/normalize.css */
+	-webkit-text-size-adjust: 100%;
+	    -ms-text-size-adjust: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background: url(../assets/images/statcraftbg2.png) repeat;
+	background-size: contain;
+}
+
+@font-face {
+	font-family: 'minercraftory';
+	src: url('../assets/fonts/Minercraftory.ttf'), /* IE9 Compat Modes */
+		url('../assets/fonts/Minercraftory.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+img { 
+	border: 0; 
+	-ms-interpolation-mode: bicubic; /* Better IMG resizing in IE */
+}
+
+.statcraft-header {
+	display: block;
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 75vw;
+	max-width: 600px;
+	height: auto;
+}
+
+.statcraft-splash {
+	position: absolute;
+	top: 120px;
+	left: 65%;
+	width: 300px;
+	transform: translate(-50%, -50%) rotate(-10deg);
+	animation: grow 1s ease infinite alternate;
+	transition: .5s all linear;
+
+	@media (max-width: 500px) {
+		top: 100px;
+		left: 70%;
+		width: 250px;
+		transform: translate(-50%, -50%) rotate(-10deg);
+		// animation: none;
+	}
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	overflow-y: hidden;
+	font-family: minercraftory, monospace;
+}
+
+.Component {
+	color: black;
+	margin: 5vh auto;
+	width: 90vw;
+	max-width: 700px;
+	padding: 2em;
+	border: 6px solid rgba(0, 0, 0, 0.4);
+	background: url(../assets/images/moss.png) center center repeat;
+}
+
+// // tilt 2s linear infinite alternate
+// @keyframes tilt {
+// 	from {
+// 		transform: rotate(-23deg);
+// 	}
+
+// 	to {
+// 		transform: rotate(-25deg);
+// 	}
+// }
+
+@keyframes grow {
+	from {
+		transform: translate(-50%, -50%) rotate(-10deg) scale(0.95);
+		// width: 300px;
+	}
+
+	to {
+		transform: translate(-50%, -50%) rotate(-10deg) scale(1);
+		// width: 310px;
+	}
+}
